@@ -32,14 +32,10 @@
 	<dict>
 		<key>localhost</key>
 		<dict>
-		<key>NSExceptionAllowsInsecureHTTPLoads</key>
-		<true/>
-		</dict>
-		<dict>
-		<key>NSExceptionAllowsInsecureHTTPLoads</key>
-		<true/>
-		<key>NSIncludesSubdomains</key>
-		<true/>
+			<key>NSExceptionAllowsInsecureHTTPLoads</key>
+			<true/>
+			<key>NSIncludesSubdomains</key>
+			<true/>
 		</dict>
 	</dict>
 	</dict>
