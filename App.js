@@ -35,6 +35,7 @@ const App = () => {
           setCargando(false);
         }).catch(function (error) {
           console.log(error.response.data);
+          setCargando(false);
           if (error.response.data == "La reserva que intenta confirmar fue cancelada.") {
             Alert.alert('Error ⚠️', 'La reserva que intenta confirmar se encuentra cancelada');
           } else if (error.response.data == "La reserva ya fue confirmada anteriormente.") {
@@ -42,7 +43,6 @@ const App = () => {
           } else {
             Alert.alert('Error ⚠️', 'No se pudo completar la operación. Inténtalo de nuevo más tarde.');
           }
-          setCargando(false);
         });
     }
 
